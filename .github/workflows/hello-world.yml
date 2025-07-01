@@ -9,10 +9,10 @@
 # c. Run a command - echo "Hello, world!"
 # Trigger Workflow on push event should execute successfully
 name: Hello World
-on:
-  push:
+on: [push]
 jobs: 
-  runs_on: ubuntu-latest
-  steps:
-  - name: Echo text
-    run: echo "Hello, World!"
+  job1:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Echo text
+      run: echo "Hello, World!"
